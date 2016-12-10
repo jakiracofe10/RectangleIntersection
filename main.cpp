@@ -29,14 +29,12 @@ bool doRectanglesIntersect(rectangle r1, rectangle r2) {
     if (r1.botLeft.x < r2.botLeft.x && r1.topRight.x > r2.topRight.x && r1.botLeft.y < r2.botLeft.y && r1.topRight.y > r2.topRight.y) {
         return false;
     }
-    //add logic for both x being less than max x
-    //add logic for both y being less than max y
     return true;
 }
 
 int main() {
     point p1BL(0,0);
-    point p1TR(5,5);
+    point p1TR(5,4);
     point p2BL(2,2);
     point p2TR(3,5);
     rectangle r1(p1BL, p1TR);
