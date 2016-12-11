@@ -16,10 +16,6 @@ struct rectangle {
 };
 
 bool doRectanglesIntersect(rectangle r1, rectangle r2) {
-    int r1Width = r1.topRight.x-r1.botLeft.x;
-    int r1Height = r1.topRight.y-r1.botLeft.y;
-    int r2Width = r2.topRight.x-r2.botLeft.x;
-    int r2Height = r2.topRight.y-r2.botLeft.y;
     if (r1.botLeft.x > r2.topRight.x || r1.topRight.x < r2.botLeft.x) {
         return false;
     }
